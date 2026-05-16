@@ -44,6 +44,14 @@ Executes a validation suite evaluating structural capacity variants ($z \in \{16
 
 ---
 
+## 📊 Dataset Availability & Resources
+
+The raw OULAD benchmark files required to execute this experimental pipeline can be acquired from either of the following open-access public data repositories:
+- **UCI Machine Learning Repository**: [Open University Learning Analytics Dataset (OULAD Official Release)](https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset)
+- **Kaggle Datasets**: [Student Demographics & Online Education Data (OULAD Alternative)](https://www.kaggle.com/datasets/anlgrbz/student-demographics-online-education-dataoulad)
+
+---
+
 ## 🚀 Execution & Requirements
 
 ### Technical Dependencies
@@ -54,7 +62,8 @@ Executes a validation suite evaluating structural capacity variants ($z \in \{16
 - SciPy, Psutil, Pandas, NumPy, Matplotlib, Seaborn
 
 ### Running the Notebook
-1. Place your raw OULAD files (`studentInfo.csv`, `vle.csv`, `studentVle.csv`) inside your designated Google Drive folder directory.
-2. Open the file `stabilizing_ews_latent_oulad.ipynb` inside Google Colab.
-3. Select a GPU Runtime Environment (`Runtime` -> `Change runtime type` -> `T4 GPU`).
-4. Execute the cells sequentially from `CELL 1` to `CELL 11`. All quantitative results and model checkpoints (`.pth`) will save automatically to your Drive results folder.
+1. Download the raw dataset files (`studentInfo.csv`, `vle.csv`, and `studentVle.csv`) from the resource links provided above.
+2. Place your raw OULAD files inside your designated Google Drive folder directory path as configured in `CELL 2`.
+3. Open the file `stabilizing_ews_latent_oulad.ipynb` inside Google Colab.
+4. Select a GPU Runtime Environment (`Runtime` -> `Change runtime type` -> `T4 GPU`).
+5. Execute the cells sequentially from `CELL 1` to `CELL 11`. All quantitative results and model checkpoints (`.pth`) will save automatically to your Drive results folder.
